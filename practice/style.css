@@ -1,0 +1,25 @@
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+div{
+    width: 200px;
+    height:200px;
+    background-color: blueviolet;
+    position: sticky;
+    bottom: 0px;
+    animation-name: colorChanging;
+    animation-duration: 1s;
+    animation-iteration-count: 10;
+}
+@keyframes colorChanging{
+    from{
+        background-color: blueviolet;
+        transform: translateY(-100px);
+    }
+    to{
+        background-color: brown;
+    }
+}
